@@ -5,6 +5,5 @@
     - role: pkorobeinikov.apt-repository
       apt_repository_repositories:
         - repo: deb http://packages.irontec.com/debian artemis main extra
-          key: http://packages.irontec.com/public.key
         - repo: deb http://packages.irontec.com/debian tayler main
-          key: http://packages.irontec.com/public.key
+          
