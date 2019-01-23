@@ -1,0 +1,3 @@
+# Install a role from GitHub
+- name: apt-repo
+  src: https://github.com/pkorobeinikov/ansible-role-apt-repository
