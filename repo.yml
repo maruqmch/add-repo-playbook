@@ -1,11 +1,7 @@
 ---
 - hosts: all
   tasks:
-    - name: Add an Apt signing key
-      apt_key:
-        url: http://packages.irontec.com/public.key
-        state: present
-
+  
     - name: add ivoz apt repository
       apt_repository: 
         repo: 'deb http://packages.irontec.com/debian artemis main extra' 
