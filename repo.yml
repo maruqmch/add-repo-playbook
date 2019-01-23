@@ -1,6 +1,7 @@
 ---
 - hosts: all
 # Add specified repository into sources list using specified filename.
+tasks:
 - name: add ivoz apt-key
   apt_key: 
     url: http://packages.irontec.com/public.key 
