@@ -1,6 +1,5 @@
 ---
 - hosts: all
-  become: true
   roles:
     - role: pkorobeinikov.apt-repository
       apt_repository_repositories:
