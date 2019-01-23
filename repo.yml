@@ -1,7 +1,6 @@
 ---
 - hosts: all
-# Add specified repository into sources list using specified filename.
-tasks:
+  tasks:
 - name: add ivoz apt-key
   apt_key: 
     url: http://packages.irontec.com/public.key 
@@ -19,6 +18,7 @@ tasks:
     state: present 
     filename: klear.list
     update_cache: yes
+
 
           
           
