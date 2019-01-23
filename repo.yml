@@ -1,23 +1,23 @@
 ---
 - hosts: all
   tasks:
-- name: add ivoz apt-key
-  apt_key: 
-    url: http://packages.irontec.com/public.key 
-    state: present 
+    - name: Add an Apt signing key, uses whichever key is at the URL
+        apt_key:
+        url: http://packages.irontec.com/public.key
+        state: present
 
-- name: add ivoz apt repository
-  apt_repository: 
-    repo: 'deb http://packages.irontec.com/debian artemis main extra' 
-    state: present 
-    filename: ivozprovider.list 
-    update_cache: yes
-- name: add klear apt repository
-  apt_repository: 
-    repo: 'deb http://packages.irontec.com/debian tayler main' 
-    state: present 
-    filename: klear.list
-    update_cache: yes
+    - name: add ivoz apt repository
+        apt_repository: 
+        repo: 'deb http://packages.irontec.com/debian artemis main extra' 
+        state: present 
+        filename: ivozprovider.list 
+        update_cache: yes
+    - name: add klear apt repository
+        apt_repository: 
+        repo: 'deb http://packages.irontec.com/debian tayler main' 
+        state: present 
+        filename: klear.list
+        update_cache: yes
 
 
           
